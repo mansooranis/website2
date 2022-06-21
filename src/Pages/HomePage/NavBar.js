@@ -8,7 +8,7 @@ export default function NavBar(){
                 <Navbar.Brand href="#">MA</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link href="#home" style={{color:"black"}}>About</Nav.Link>
+                        <Nav.Link href="#home" style={{color:"black"}}>Projects</Nav.Link>
                         <Nav.Link href="#link" style={{color:"black"}}>Resume</Nav.Link>
                         <Nav.Link href="#link" style={{color:"black"}}>Conatct</Nav.Link>
                     </Navbar.Collapse>

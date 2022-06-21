@@ -45,9 +45,6 @@ export default function Home(){
                             {render} 
                             <NavBar/>
                         </motion.div>
-                        <motion.div>
-                            
-                        </motion.div>
                     </>
                 )}
             </AnimatePresence>
