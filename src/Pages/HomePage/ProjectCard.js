@@ -2,7 +2,6 @@ import { useState } from "react"
 import {SiReact, SiFlask, SiMongodb, SiNetlify, 
     SiHeroku, SiSqlite, SiGithub, SiDevpost, SiPython, 
     SiJupyter, SiNodedotjs, SiExpress, SiGit, SiScikitlearn, SiTailwindcss, SiFramer} from "react-icons/si"
-import { Link } from "react-router-dom";
 
 const techicons = {
     "react": (<SiReact/>),
