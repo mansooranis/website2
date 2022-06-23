@@ -2,11 +2,12 @@ import NavBar from "./NavBar"
 import useCard from "./Card"
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react";
+import Projects from "./Projects";
 export default function Home(){
     const {isdark,render} = useCard();
     const [showcomp , setshowcomp] = useState(true);
     return(
-        <>
+        <div id="Home">
             <AnimatePresence>
                 {showcomp && (
                 <motion.div 
@@ -35,8 +36,8 @@ export default function Home(){
                 </motion.div>)
                     }
                 {!showcomp && (
-                    <>
-                        <motion.div className= {`${isdark} h-screen bg-white flex justify-center items-center`}
+                    <div className={`${isdark}`}>
+                        <motion.div className= {`h-screen dark:bg-black bg-white flex justify-center items-center`}
                             animate={{ opacity:[0,1]}}
                             transition={{ ease: "easeIn",duration: 2}}
                             initial = {{opacity:0}}
@@ -45,9 +46,17 @@ export default function Home(){
                             {render} 
                             <NavBar/>
                         </motion.div>
-                    </>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition = {{ ease: "easeIn",duration: 2}}
+                            >
+                            <Projects/>
+                        </motion.div>
+                    </div>
                 )}
             </AnimatePresence>
-        </>
+        </div>
     )
 }

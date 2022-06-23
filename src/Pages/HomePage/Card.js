@@ -5,7 +5,7 @@ import {MdDarkMode,} from 'react-icons/md'
 import {BsSun, BsLinkedin, BsGithub} from 'react-icons/bs'
 
 export default function useCard(){
-    const [isdark,setdark] = useState("dark");
+    const [isdark,setdark] = useState("");
     const settingdark = () => {
         if (checkdark){
             setdark("")
@@ -16,9 +16,8 @@ export default function useCard(){
         }
         
     }
-    const [checkdark,setcheckdark] = useState(true);
+    const [checkdark,setcheckdark] = useState(false);
     var w = window.innerWidth;
-    console.log(w);
     const screenfunc = (w) => {
         if (w > 510){
             return true;
@@ -40,8 +39,8 @@ export default function useCard(){
                         <text className=" mt-[-10px] font-light text-center">Aspiring Software Engineer</text>
                         <div className="mt-[10px] flex flex-row space-x-5">  
                             {checkdark?<BsSun className=" text-xl " onClick={settingdark}/>:<MdDarkMode className=" text-xl" onClick={settingdark}/>}
-                            <BsLinkedin className=" text-xl"/>
-                            <BsGithub className="text-xl"/>
+                            <a href="https://www.linkedin.com/in/mansoor-anis-440675191/"><BsLinkedin className=" text-xl"/></a>
+                            <a href="https://github.com/mansooranis"><BsGithub className="text-xl"/></a>
                         </div>
                         <div className=" flex flex-row space-x-20 mt-16 justify-center items-center">
                             <div className=" w-4/12">
@@ -52,10 +51,10 @@ export default function useCard(){
                                         </text>
                                 </div>
                             </div>
-                            <div className=" w-4/12 text-sm">
-                                <div className="grid grid-cols-2 grid-rows-5 text-left gap-x-0">
+                            <div className=" w-4/12 text-xs">
+                                <div className="grid grid-cols-2 grid-rows-5 text-left">
                                     <div className=" font-semibold">education</div>
-                                    <div>University fo Alberta</div> 
+                                    <div>University of Alberta</div> 
                                     <div className=" font-semibold">location</div>
                                     <div>Canada</div>
                                     <div className=" font-semibold">address</div>
@@ -81,7 +80,7 @@ export default function useCard(){
                                         <BsLinkedin className=" text-xl"/>
                                         <BsGithub className="text-xl"/>
                                     </div>
-                                    <div className=" flex flex-row space-x-20 mt-16 justify-center items-center">
+                                    <div className=" flex flex-row space-x-20 mt-4 justify-center items-center">
                                         <div className=" w-4/6">
                                             <div className=" text-lg text-left whitespace-pre-wrap">About <text className="text-[#EF9F9F] dark:text-[#F05454] transition ease-in-out duration-[2000ms]">Me</text>
                                                     {'\n'}
@@ -93,7 +92,6 @@ export default function useCard(){
                                     </div>
                                 </div>
                             </div>  
-
                     }
             </>
         ),
