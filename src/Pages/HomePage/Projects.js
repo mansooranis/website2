@@ -33,7 +33,7 @@ export default function Projects(){
                 <ProjectCard 
                     number="05" 
                     title="Library Management" 
-                    text="Full stack desktop application using Object oriented programming in Python." 
+                    text="Full stack desktop application using advanced concepts of Object oriented programming in Python." 
                     icons={["python","sql"]}
                     gitlink= "https://github.com/mansooranis/library-management"
                         />
