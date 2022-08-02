@@ -31,7 +31,7 @@ export default function useCard(){
         render: (
             <>
                 {screenfunc(w)?
-                <div className=" text-[#781D42] dark:text-[#30475E] h-[85%] w-[90%] bg-[#FFF2F2] rounded-3xl shadow-lg z-0 dark:bg-[#DDDDDD] transition ease-in-out duration-[2000ms]">
+                <div className=" text-[#781D42] dark:text-[#30475E] h-[88%] w-[90%] mt-5 bg-[#FFF2F2] rounded-3xl shadow-lg z-0 dark:bg-[#DDDDDD] transition ease-in-out duration-[2000ms]">
                     <div className="flex flex-col items-center">
                         <div className="h-48 w-full bg-[#EF9F9F] rounded-t-3xl z-10 dark:bg-[#222831] transition ease-in-out duration-[2000ms]"></div>
                         <img alt="Mansoor Anis" src={me} className=" h-40 w-40 bg-[#FAD4D4] dark:bg-[#FFFFFF] items-center my-[-80px] z-20 rounded-full transition ease-in-out duration-[2000ms]"></img>
@@ -77,8 +77,8 @@ export default function useCard(){
                                     <text className=" mt-[-10px] font-light text-center">Aspiring Software Engineer</text>
                                     <div className="mt-[10px] flex flex-row space-x-5">  
                                         {checkdark?<BsSun className=" text-xl " onClick={settingdark}/>:<MdDarkMode className=" text-xl" onClick={settingdark}/>}
-                                        <BsLinkedin className=" text-xl"/>
-                                        <BsGithub className="text-xl"/>
+                                        <a href="https://www.linkedin.com/in/mansoor-anis-440675191/"><BsLinkedin className=" text-xl"/></a>
+                                        <a href="https://github.com/mansooranis"><BsGithub className="text-xl"/></a>
                                     </div>
                                     <div className=" flex flex-row space-x-20 mt-4 justify-center items-center">
                                         <div className=" w-5/6">

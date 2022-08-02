@@ -16,7 +16,7 @@ export default function Projects(){
                         />
                 <ProjectCard 
                     number="03" 
-                    title="SceduleUp" 
+                    title="ScheduleUp" 
                     text="Developed a full stack webapp to generate multiple combinations of selected university courses." 
                     icons={["react","netlify","nodejs","express","flask","mongodb","heroku","git"]}
                     devpost={true}
@@ -26,7 +26,7 @@ export default function Projects(){
                 <ProjectCard 
                     number="04" 
                     title="Personal Website" 
-                    text="Made my current website with animations and dark mode to protray my best projects."  
+                    text="Made my current website with animations and dark mode to portray my best projects."  
                     icons={["react","tailwind","framer"]}
                     gitlink = "https://github.com/mansooranis/mansooranis.github.io"
                         />
