@@ -9,7 +9,7 @@ export default function NavBar(){
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link href="#projects" style={{color:"black"}}>Projects</Nav.Link>
-                        <Nav.Link download="MansoorAnis.pdf" href="https://drive.google.com/file/d/1tJkBFamWh-qyL41n590_FJy7-YfV6ovn/view?usp=sharing" style={{color:"black"}}>Resume</Nav.Link>
+                        <Nav.Link download="MansoorAnis.pdf" href="https://drive.google.com/file/d/1GrrCl8rhlv1H78zfrQpa-ypG-_R1xKZ3/view?usp=sharing" style={{color:"black"}}>Resume</Nav.Link>
                         <Nav.Link href="mailto: mansooranis03@gmail.com" style={{color:"black"}}>Contact</Nav.Link>
                     </Navbar.Collapse>
                 </Container>
