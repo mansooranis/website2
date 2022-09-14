@@ -22,6 +22,7 @@ const techicons = {
 }
 
 export default function ProjectCard(props){
+    console.log("welcome to my website")
     const listitems = props.icons.map((icon) => techicons[icon]);
     const [isClicked1, setClicked1] = useState(false)
     function clicked1 () {
