@@ -35,7 +35,7 @@ export default function ProjectCard(props){
                     {isClicked1 ?
                     <div className="z-20 flex flex-col mt-12">
                         <div className=" text-xl self-center text-left font-semibold w-5/6">Tools Used:</div>
-                        <div className=" mt-1 flex flex-row self-center justify-baseline items-baseline align-baseline flex-wrap text-left text-4xl space-x-8 w-10/12 space-y-3">
+                        <div className=" mt-1 flex flex-row self-center justify-baseline items-baseline flex-wrap w-[80%] text-left text-3xl space-x-8 space-y-3">
                             {listitems}
                         </div>
                         <button className="text-left self-center w-5/6 italic font-extralight mt-2" onClick={clicked1} >Click here to return</button>
@@ -43,9 +43,9 @@ export default function ProjectCard(props){
                     :<div className=" flex flex-col z-20">
                         <div className="mt-10 w-5/6 text-left flex self-center text-2xl">{props.title}</div>
                         <div className=" text-left text-xs w-5/6 flex self-center mt-2">{props.text}</div>
-                        <div className="flex-row flex w-5/6 self-center space-x-4">
-                            <a href={props.gitlink} ><button className="self-center text-left w-5/6 mt-1"><SiGithub/></button></a>
-                            {props.devpost?<a href={props.devlink}><button className="self-center text-left w-5/6 mt-1"><SiDevpost/></button></a>:<></>}
+                        <div className="flex-row flex w-5/6 self-center space-x-6 mt-2">
+                            <a href={props.gitlink} ><button className="self-center text-left mt-1 text-lg"><SiGithub/></button></a>
+                            {props.devpost?<a href={props.devlink}><button className="self-center text-left mt-1"><SiDevpost/></button></a>:<></>}
                         </div>
                         <button className="z-20 text-left self-center w-5/6 italic font-extralight" onClick={clicked1} >Click here to see more</button>
                     </div>
